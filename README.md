@@ -102,9 +102,9 @@ superstore-sales-analysis/
 
 │   ├── superstore-analysis.pdf       # Statik PDF export
 
-│   ├── 01-overview.png               # Sayfa 1 ekran görüntüsü
+│   ├── 01-overview.jpg               # Sayfa 1 ekran görüntüsü
 
-│   └── 02-product-analysis.png       # Sayfa 2 ekran görüntüsü
+│   └── 02-product-analysis.jpg       # Sayfa 2 ekran görüntüsü
 
 ├── sql/
 
