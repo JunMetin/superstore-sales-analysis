@@ -204,7 +204,7 @@ Aynı veri seti üzerinde Excel ile alternatif analiz sunarak araç çeşitlili�
 
 ![Excel Dashboard](excel/04-excel-dashboard.jpg)
 
-![Excel Formula Analysis](excel/05-excel-formulas.jpg)
+![Excel Formula Analysis](excel/05-excel-pivots.jpg)
 
 ** Dosya:** [Superstore-Excel-Analysis.xlsx](excel/Superstore-Excel-Analysis.xlsx)
 
