@@ -191,6 +191,37 @@ Her dosyada iş sorusu ve kullanılan SQL pattern'i yorum satırlarıyla açıkl
 \---
 
 
+---
+
+##  Excel ile Keşifsel Analiz
+
+Aynı veri seti üzerinde Excel ile alternatif analiz sunarak araç çeşitliliğimi gösterdim. Excel projesi 4 sheet'ten oluşuyor:
+
+**1. Raw Data** — Süperstore CSV'sini Power Query (M) ile yüklenmiş, locale tabanlı tip dönüşümü ile düzeltilmiş, `tblSuperstore` adında structured table.
+
+**2. Pivot Analysis** — Üç farklı pivot table:
+- Yıllara göre kategori bazlı satış (cross-tab)
+- Bölge × Segment kâr matrisi (3-color scale conditional formatting ile heatmap)
+- Top 10 müşteri (Top N filter)
+
+**3. Formula Analysis** — Formül beceri sergilenen bölüm:
+- `SUMIFS`, `COUNTIFS`, `AVERAGEIFS` ile kategori agregasyonları
+- `XLOOKUP` ile dinamik ürün arama aracı (4. parametre olarak "Bulunamadı" fallback)
+- `IF` / `IFS` ile kâr durumu sınıflandırması (Yüksek Kâr / Pozitif / Zarar)
+- `COUNTIFS` çoklu kriter ile indirim seviyesi analizi
+
+**4. Dashboard** — Interaktif görünüm:
+- 4 KPI hücresi (Total Sales, Total Profit, Profit Margin, Unique Orders)
+- Aylık satış trendi PivotChart (sezonsallık görünür)
+- Kategori dağılımı PivotChart
+- Year slicer ile iki chart birden filtrelenir
+
+![Excel Dashboard](excel/04-excel-dashboard.jpg)
+
+![Excel Formula Analysis](excel/05-excel-formulas.jpg)
+
+** Dosya:** [Superstore-Excel-Analysis.xlsx](excel/Superstore-Excel-Analysis.xlsx)
+
 
 \##  Hakkımda
 
